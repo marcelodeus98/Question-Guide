@@ -1,0 +1,31 @@
+.card{
+    border: none;
+    margin: 1rem;
+}
+
+.card-body{
+
+    border-radius: 8px 8px 8px 8px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.card input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem ;
+    border: 1px solid #D3D3D3;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.card button{
+    margin: 0.5rem;
+}
+
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+}

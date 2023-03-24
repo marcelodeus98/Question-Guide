@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/question.css">
+
+<%- include ('./partials/header.ejs') -%>
+
+<body>
+    <%- include ('./partials/nav.ejs') -%>
+
+    <div class="container">
+        <form method="POST" action="/submit_questions">
+            <div class="card">
+                <div class="card-header">
+                    <h1>  👋  Aks your question to people </h1>
+                </div>
+                
+                <div class="card-body">
+                    <input name="title" type="text" placeholder="Title">
+                    <textarea name="description"  placeholder="Enter your question..."></textarea>
+
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            
+            </div>
+        </form>
+    </div>
+
+    <%- include ('./partials/navFooter.ejs') %>
+    
+</body>
+
+<%- include ('./partials/footer.ejs') -%>

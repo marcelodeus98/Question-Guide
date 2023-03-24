@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<%- include ('./partials/header.ejs') %>
+
+<body>
+    <%- include ('./partials/nav.ejs') %>
+
+    <div class="container">
+
+      <div class="content">
+        <h1> 👋 Ask your question</h1>
+        <a href="/question"><button class="btn btn-primary">To do</button></a>
+  
+        <div class="separator">
+          <div></div>
+          <div><h3>OR</h3></div>
+          <div></div>
+        </div>
+
+      </div>
+
+      <h1 id="title">Answer</h1>
+
+        <% questions.forEach(question => { %>
+
+          <div class="card">
+            <div class="card-header">
+                <h3> <%= question.title %> </h3>
+            </div>
+
+            <div class="card-body">
+              <a href="/question/<%= question.id %>"><button class="btn btn-primary">To respond</button></a>
+            </div>
+          </div>
+
+        <% }) %>
+
+        <br/>
+    </div>
+
+  <%- include ('./partials/navFooter.ejs') %>
+
+
+</body>
+</html>
+
+<%- include ('./partials/footer.ejs') %>
